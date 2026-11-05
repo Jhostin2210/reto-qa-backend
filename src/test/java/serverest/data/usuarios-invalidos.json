@@ -1,0 +1,80 @@
+[
+  {
+    "caso": "nome ausente",
+    "cambios": {},
+    "remover": "nome",
+    "respuestaEsperada": { "nome": "nome é obrigatório" }
+  },
+  {
+    "caso": "email ausente",
+    "cambios": {},
+    "remover": "email",
+    "respuestaEsperada": { "email": "email é obrigatório" }
+  },
+  {
+    "caso": "password ausente",
+    "cambios": {},
+    "remover": "password",
+    "respuestaEsperada": { "password": "password é obrigatório" }
+  },
+  {
+    "caso": "administrador ausente",
+    "cambios": {},
+    "remover": "administrador",
+    "respuestaEsperada": { "administrador": "administrador é obrigatório" }
+  },
+  {
+    "caso": "nome vacío",
+    "cambios": { "nome": "" },
+    "remover": null,
+    "respuestaEsperada": { "nome": "nome não pode ficar em branco" }
+  },
+  {
+    "caso": "email vacío",
+    "cambios": { "email": "" },
+    "remover": null,
+    "respuestaEsperada": { "email": "email não pode ficar em branco" }
+  },
+  {
+    "caso": "password vacío",
+    "cambios": { "password": "" },
+    "remover": null,
+    "respuestaEsperada": { "password": "password não pode ficar em branco" }
+  },
+  {
+    "caso": "email con formato inválido",
+    "cambios": { "email": "correo-sin-arroba.com" },
+    "remover": null,
+    "respuestaEsperada": { "email": "email deve ser um email válido" }
+  },
+  {
+    "caso": "administrador con valor no permitido",
+    "cambios": { "administrador": "si" },
+    "remover": null,
+    "respuestaEsperada": { "administrador": "administrador deve ser 'true' ou 'false'" }
+  },
+  {
+    "caso": "administrador como booleano",
+    "cambios": { "administrador": true },
+    "remover": null,
+    "respuestaEsperada": { "administrador": "administrador deve ser 'true' ou 'false'" }
+  },
+  {
+    "caso": "nome numérico",
+    "cambios": { "nome": 12345 },
+    "remover": null,
+    "respuestaEsperada": { "nome": "nome deve ser uma string" }
+  },
+  {
+    "caso": "password numérico",
+    "cambios": { "password": 12345 },
+    "remover": null,
+    "respuestaEsperada": { "password": "password deve ser uma string" }
+  },
+  {
+    "caso": "campo no permitido en el body",
+    "cambios": { "rol": "superadmin" },
+    "remover": null,
+    "respuestaEsperada": { "rol": "rol não é permitido" }
+  }
+]
